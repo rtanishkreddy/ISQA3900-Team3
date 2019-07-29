@@ -2,6 +2,7 @@
 *~
 __pycache__
 env
+myvenv
 db.SQLITE3
 /static
 .DS_Store
