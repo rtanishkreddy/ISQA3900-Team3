@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'cart.apps.CartConfig',
     'orders.apps.OrdersConfig',
     'payment.apps.PaymentConfig',
+    'coupons.apps.CouponsConfig'
 ]
 
 MIDDLEWARE = [
@@ -143,3 +144,11 @@ Configuration.configure(
     BRAINTREE_PUBLIC_KEY,
     BRAINTREE_PRIVATE_KEY
 )
+
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST_USER = 'isqa3900team3@gmail.com'
+EMAIL_HOST_PASSWORD = '3900Team3'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+
+STATIC_ROOT = os.path.join(BASE_DIR, 'static/')
