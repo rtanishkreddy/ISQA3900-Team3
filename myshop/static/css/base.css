@@ -4,15 +4,122 @@ body {
     margin:0;
     padding:0;
     font-family:helvetica, sans-serif;
+    background: #f2f6e9;
 }
 
+.navbar {
+  background:#308a47;
+}
+.nav-link,
+.navbar-brand {
+  color: #fff;
+  cursor: pointer;
+  font-family: Lucida Console;
+}
+.nav-link {
+  margin-right: 1em !important;
+}
+.nav-link:hover {
+  color: #000;
+}
+.navbar-collapse {
+  justify-content: flex-end;
+}
+
+.header {
+  background-image: url('img/bookcase.jpg');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  min-height: 100%;
+  min-width: 100%;
+  left: 0;
+  top: 0;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.description {
+  left: 50%;
+  position: absolute;
+  top: 45%;
+  transform: translate(-50%, -55%);
+  text-align: center;
+}
+.description h1 {
+  color: #6ab446;
+}
+.description p {
+  color: #fff;
+  font-size: 1.3rem;
+  line-height: 1.5;
+}
+
+.features {
+  margin: 4em auto;
+  position: relative;
+}
+.feature-title {
+  color: #333;
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+.features img {
+  width:40%;
+  -webkit-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+  margin-bottom: 16px;
+}
+
+.page-footer {
+  background-color: #222;
+  color: #ccc;
+  padding: 60px 0 30px;
+  height: 100
+  bottom:0;
+  width: 100%;
+}
+.footer-copyright {
+  color: #666;
+  padding: 40px 0;
+}
+
+@media (max-width: 575.98px) {
+  .description {
+    left: 0;
+    padding: 0 15px;
+    position: absolute;
+    top: 10%;
+    transform: none;
+    text-align: center;
+  }
+
+  .description h1 {
+    font-size: 2em;
+  }
+
+  .description p {
+    font-size: 1.2rem;
+  }
+
+  .features {
+    margin: 0;
+
+  }
+}
 h1, h2, h3, h4, h5 , h6 {
     font-family: 'Ubuntu', sans-serif; font-weight:normal;
 }
 
 a {
     text-decoration:none;
-    color:#5993bb;
+    color:#6ab446;
 }
 
 a:hover {
@@ -145,6 +252,7 @@ ul.errorlist {
     padding:20px 100px 10px 100px;
     overflow:hidden;
     min-height: 100%;
+    float: right;
 }
 
 #sidebar {
@@ -209,9 +317,9 @@ ul.errorlist {
 }
 
 .product-detail img {
-    width:40%;
-    float:left;
-    padding:0 20px 20px 0;
+    width:30%;
+    float: right;
+    padding:0 20px 20px 25px;
 }
 
 .product-detail h1 {

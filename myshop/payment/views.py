@@ -30,8 +30,8 @@ def payment_process(request):
             order.save()
 
             # create invoice e-mail
-            subject = 'My Shop - Invoice no. {}'.format(order.id)
-            message = 'Please, find attached the invoice for your recent purchase.'
+            subject = 'Books For Us Order Confirmation - Invoice no. {}'.format(order.id)
+            message = 'Thank you for shopping at Books For Us. Attached is the invoice for your recent purchase.'
             email = EmailMessage(subject,
                                  message,
                                  'admin@myshop.com',
