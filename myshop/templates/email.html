@@ -7,8 +7,10 @@
 <form method="post">
     {% csrf_token %}
     {{ form.as_p }}
-    <div class="form-actions">
-      <button type="submit">Send</button>
+    <div class="container">
+        <div class="form-actions">
+        <button type="submit">Send</button>
+        </div>
     </div>
 </form>
 {% endblock %}
