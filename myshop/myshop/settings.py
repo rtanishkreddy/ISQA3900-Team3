@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     'payment.apps.PaymentConfig',
     'coupons.apps.CouponsConfig',
     'sendemail.apps.SendemailConfig',
+    'blog',
 ]
 
 MIDDLEWARE = [

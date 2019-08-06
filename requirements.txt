@@ -1,9 +1,0 @@
-django==2.2.3
-django-mathfilters
-djangorestframework
-requests
-django-crispy-forms
-pillow
-celery
-eventlet
-braintree
